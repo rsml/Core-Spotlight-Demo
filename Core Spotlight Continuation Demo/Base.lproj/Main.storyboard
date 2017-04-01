@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDS-HZ-GCE">
+                                <rect key="frame" x="133" y="96" width="108" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.70196078429999997" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eya-zv-j5d"/>
+                                    <constraint firstAttribute="width" constant="108" id="nfu-Wj-m9X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="添加索引">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="indexObjects:" destination="BYZ-38-t0r" eventType="touchUpInside" id="20r-jS-yrL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Index some objects" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTc-MG-sZh">
+                                <rect key="frame" x="113" y="148" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysi-MP-Pyy">
+                                <rect key="frame" x="133" y="216" width="108" height="44"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.21960784310000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="895-mA-cFy"/>
+                                    <constraint firstAttribute="height" constant="44" id="vxm-x4-0I1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="移除索引">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeIndexedObjects:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DRR-SB-lAS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove indexed objects" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8r-ep-tt4">
+                                <rect key="frame" x="94" y="268" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI4-VZ-cw2">
+                                <rect key="frame" x="134" y="336" width="108" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.72941176470000002" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="PNI-v1-l5r"/>
+                                    <constraint firstAttribute="height" constant="44" id="jQG-vi-aZ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="查询索引">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="queryIndexedObjects:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mLE-Gw-F6N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Query indexed objects" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgM-SX-BPH">
+                                <rect key="frame" x="102" y="388" width="172" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WI4-VZ-cw2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0o4-dK-dEI"/>
+                            <constraint firstItem="rTc-MG-sZh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4as-r7-l3o"/>
+                            <constraint firstItem="Ysi-MP-Pyy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="83n-AL-UpR"/>
+                            <constraint firstItem="xgM-SX-BPH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BHt-f5-PPD"/>
+                            <constraint firstItem="Ysi-MP-Pyy" firstAttribute="top" secondItem="nDS-HZ-GCE" secondAttribute="bottom" constant="76" id="JP6-pF-e9z"/>
+                            <constraint firstItem="WI4-VZ-cw2" firstAttribute="top" secondItem="Ysi-MP-Pyy" secondAttribute="bottom" constant="76" id="L9I-Br-v8v"/>
+                            <constraint firstItem="rTc-MG-sZh" firstAttribute="top" secondItem="nDS-HZ-GCE" secondAttribute="bottom" constant="8" id="cHB-1H-dgg"/>
+                            <constraint firstItem="nDS-HZ-GCE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="76" id="kM7-1l-Bw3"/>
+                            <constraint firstItem="xgM-SX-BPH" firstAttribute="top" secondItem="WI4-VZ-cw2" secondAttribute="bottom" constant="8" id="svs-rq-vKA"/>
+                            <constraint firstItem="e8r-ep-tt4" firstAttribute="top" secondItem="Ysi-MP-Pyy" secondAttribute="bottom" constant="8" id="tAO-Dz-V59"/>
+                            <constraint firstItem="e8r-ep-tt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ysu-dy-dma"/>
+                            <constraint firstItem="nDS-HZ-GCE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zG8-H6-GSQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
