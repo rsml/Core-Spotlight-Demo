@@ -13,7 +13,7 @@ CoreSpotlightContinuation lets you continue searching in App from Spotlight.
 Just git clone & Run
 
 # Requirements
-This project requires `iOS 10.3+` and `Xcode 8.3+`.
+This project requires `iOS 10.0+` and `Xcode 8.0+`.
 
 # Screenshot
 ![](demo.jpg)
